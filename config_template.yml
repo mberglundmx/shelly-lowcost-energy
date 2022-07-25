@@ -1,0 +1,13 @@
+shelly_key: <shelly auth key>
+shelly_server: shelly-??-eu.shelly.cloud
+nordpol_area: SE?
+
+
+devices:
+  - name: VVB  # Name of the device (only for logging)
+    days: [0, 1, 2, 3, 4, 5, 6]  # Which days in the week to run the control
+    hours: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]  # Which hours in the day to run the control
+    minimum_hours: 3  # Minimum numbers of the controlled hours to turn on
+    always_on_hours: [2, 3, 4, 5]  # Hours to always turn on the device
+    always_on_when_price_below: 20  # Always turn on the device when price is below this (ÖRE)
+    shelly_id: <SHELLY ID>  # ID of the shelly device
