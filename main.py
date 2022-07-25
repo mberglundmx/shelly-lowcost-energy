@@ -9,7 +9,7 @@ from yaml.loader import SafeLoader
 
 # Read configuration
 # Open the file and load the file
-with open('config.yml') as f:
+with open('shelly_low_cost_energy.yml') as f:
     data = yaml.load(f, Loader=SafeLoader)
     
 shelly_auth_key = data["shelly_key"]
